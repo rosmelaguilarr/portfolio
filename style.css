@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F2F2F2;
+}
+.container{
+    max-width: 1024px;
+    width: 90%;
+    margin: 3rem auto;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 20% 20% auto auto;
+    grid-template-areas: 
+    "profile profile profile profile"
+    "skills skills post post"
+    "hobbies hobbies post post"
+    "hobbies hobbies experiencies experiencies"
+    "hobbies hobbies experiencies experiencies"
+    "proyects proyects proyects proyects"
+    "blog blog blog blog"
+    "pagination pagination pagination pagination";
+}
+profile-card{
+    grid-area: profile;
+}
+skills-card{
+    grid-area: skills;
+}
+hobbies-card{
+    grid-area: hobbies;
+}
+post-card{
+    grid-area: post;
+    display: flex;
+}
+experiencies-card{
+    grid-area: experiencies;
+    display: flex;
+}
+proyects-card{
+    grid-area: proyects;
+}
+.container-blog{
+    grid-area: blog;
+    display: flex;
+    gap: 2rem;
+}
+.pagination{
+    grid-area: pagination;
+    background-color: var(--bg-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 1.5rem 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: .8rem;
+}
+.pagination .box{
+    color: #4F4F4F;
+    border: 1px solid #4F4F4F;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+.pagination .box:hover, .box:nth-child(3){
+    background-color: #2F80ED;
+    color: #fff;
+    border: 1px solid #2F80ED;
+}
+.pagination .box:hover svg{
+    fill: #fff;
+}
+.footer{
+    text-align: center;
+    padding: 2rem 0;
+    color: #828282;
+}
+.footer a{
+    color: inherit;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 768px){
+    .container{
+       
+        grid-template-areas: 
+        "profile profile profile profile"
+        "skills skills skills skills"
+        "hobbies hobbies hobbies hobbies"
+        "post post post post"
+        "experiencies experiencies experiencies experiencies"
+        "proyects proyects proyects proyects"
+        "blog blog blog blog"
+        "pagination pagination pagination pagination";
+    } 
+    .container-blog{
+        flex-wrap: wrap;
+    }
+}
+
+profile-card {
+    --bg-color: #fff;
+    --color-primary: #4F4F4F;
+    --color-secondary: #828282;
+    --font-family: 'Montserrat', sans-serif;
+    --font-size-primary: 24px;
+    --font-size-secondary: 16px;
+    --border-radius: 12px;
+    --box-shadow: 0 0 20px rgba(51, 51, 51, 0.3);
+}
+skills-card{
+    --bg-color: #fff;
+    --color-primary: #4F4F4F;
+    --font-family: 'Montserrat', sans-serif;
+    --font-size-primary: 18px;
+    --font-size-secondary: 16px;
+    --border-radius: 12px;
+    --box-shadow: 0 0 20px rgba(51, 51, 51, 0.3);
+    
+} 
+hobbies-card {
+    --bg-color: #fff;
+    --color-primary: #4F4F4F;
+    --color-secondary: #333;
+    --font-family: 'Montserrat', sans-serif;
+    --font-size-primary: 24px;
+    --font-size-secondary: 16px;
+    --border-radius: 12px;
+    --box-shadow: 0 0 20px rgba(51, 51, 51, 0.3);
+}
+post-card{
+    --bg-color: #fff;
+    --color-primary: #4F4F4F;
+    --color-secondary: #828282;
+    --color-link: #2F80ED;
+    --font-family: 'Montserrat', sans-serif;
+    --font-size-primary: 24px;
+    --font-size-secondary: 16px;
+    --border-radius: 12px;
+    --box-shadow: 0 0 20px rgba(51, 51, 51, 0.3);
+}
+experiencies-card{
+    --bg-color: #fff;
+    --color-primary: #4F4F4F;
+    --color-secondary: #828282;
+    --font-family: 'Montserrat', sans-serif;
+    --font-size-primary: 24px;
+    --font-size-secondary: 16px;
+    --border-radius: 12px;
+    --box-shadow: 0 0 20px rgba(51, 51, 51, 0.3);
+} 
+proyects-card{
+    --bg-color: #fff;
+    --color-primary: #4F4F4F;
+    --color-active: #2F80ED;
+    --font-family: 'Montserrat', sans-serif;
+    --font-size-primary: 24px;
+    --border-radius: 12px;
+    --box-shadow: 0 0 20px rgba(51, 51, 51, 0.3);
+}
+blog-card{
+    --bg-color: #fff;
+    --color-primary: #4F4F4F;
+    --color-secondary: #828282;
+    --color-active: #2F80ED;
+    --font-family: 'Montserrat', sans-serif;
+    --font-size-primary: 24px;
+    --border-radius: 12px;
+    --box-shadow: 0 0 20px rgba(51, 51, 51, 0.3);
+}
+
+

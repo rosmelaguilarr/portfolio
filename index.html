@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+
+</head>
+
+<body>
+
+    <section class="container">
+        <profile-card
+            img="img/profile.jpg"
+            name="Rosmel Aguilar"
+            career="Front-end developer"
+            email="rosmeltics@gmail.com"
+            phone="(+51) 999999999"
+            sumary="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sint expedita magni! Error ratione iste dicta.
+            <br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cum commodi iusto at quam facere quae sit aperiam blanditiis."
+        ></profile-card>
+
+        <skills-card 
+            skills='
+            {"skill": "React", "value": 10}/
+            {"skill": "Javascript", "value": 80}/
+            {"skill": "HTML", "value": 90}/
+            {"skill": "CSS", "value": 90}/
+            {"skill": "Redux", "value": 10}/
+            {"skill": "React native", "value": 10}/
+            {"skill": "Figma", "value": 10}
+            '
+        >
+
+        </skills-card>
+
+        <hobbies-card
+            hobbies='
+            {"hobbie": "Gaming", "img": "img/gaming.jpg", "desciption": "Lorem ipsum dolor sit amet consectetur adipisicing."}**
+            {"hobbie": "Cooking", "img": "img/cooking.jpg", "desciption": "Lorem ipsum dolor sit amet consectetur adipisicing."}**
+            {"hobbie": "Football", "img": "img/football.jpg", "desciption": "Lorem ipsum dolor sit amet consectetur adipisicing."}'
+        ></hobbies-card>
+
+        <post-card
+            img="img/organize.jpg"
+            title="How to organize your CSS"
+            sumary="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde dolorem nobis nisi earum, accusantium ipsam.<br><br>
+            Id impedit nulla, laboriosam sunt eos consequatur cumque recusandae atque architecto expedita sit sint distinctio corporis quidem unde ratione ullam repellat animi aliquid, hic iure!"
+        ></post-card>
+
+        <experiencies-card
+            experiencies='
+            {"logo": "img/adidas.svg", "date": "Feb 2017 - Current", "title": "Front-end developer", "sumary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid iste similique libero veniam deleniti, qui neque eos ipsa animi unde?"}**
+            {"logo": "img/hm.svg", "date": "Aug 2016 - Feb 2018", "title": "Full-stack developer", "sumary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid iste similique libero veniam deleniti, qui neque eos ipsa animi unde?"}
+            '
+        ></experiencies-card>
+
+        <proyects-card
+            proyects='["React","Vue", "Responsive"]'
+        ></proyects-card>
+        
+        <section class="container-blog">
+            <blog-card
+                img="img/recipe-blog.jpg"
+                title="Recipe Blog"
+                sumary="In this project, I work with HTML and CSS to create a responsive page. This page is similiar with a page. The design is from devchallenge.io"
+                demo="https://rosmeltd-challenge4.netlify.app/"
+                code="https://github.com/rosmeltd/recipe-blog"
+            ></blog-card>
+            <blog-card
+                img="img/my-gallery.jpg"
+                title="My Gallery"
+                sumary="In this project, I work with HTML and CSS to create a responsive page. This page is similiar with a page. The design is from devchallenge.io"
+                demo="https://rosmeltd-challenge5.netlify.app/"
+                code="https://github.com/rosmeltd/my-gallery"
+            ></blog-card>
+            <blog-card
+                img="img/checkout.jpg"
+                title="Checkout"
+                sumary="In this project, I work with HTML and CSS to create a responsive page. This page is similiar with a page. The design is from devchallenge.io"
+                demo="https://rosmeltd-challenge6.netlify.app/"
+                code="https://github.com/rosmeltd/checkout"
+            ></blog-card>
+        </section>
+        <section class="pagination">
+            <div class="box">
+                <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 0 24 24" width="15px" fill="#4F4F4F"><path d="M0 0h24v24H0V0z" fill="none" opacity=".87"/><path d="M17.51 3.87L15.73 2.1 5.84 12l9.9 9.9 1.77-1.77L9.38 12l8.13-8.13z"/></svg>
+            </div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">
+                <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 0 24 24" width="15px" fill="#4F4F4F"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg>
+            </div>
+            <div class="box">6</div>
+            <div class="box">
+                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="15px" viewBox="0 0 24 24" width="15px" fill="#4F4F4F"><g><path d="M0,0h24v24H0V0z" fill="none"/></g><g><polygon points="6.23,20.23 8,22 18,12 8,2 6.23,3.77 14.46,12"/></g></svg>
+            </div>
+        </section>
+        
+
+     
+    </section>
+    <footer class="footer">
+        <span class="author">created by <a href="https://github.com/rosmeltd" target="_blank">@rosmeltd</a> - devChallenges.io</span>
+    </footer>
+
+    <script src="app.js" type="module"></script>
+</body>
+
+</html>
